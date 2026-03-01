@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    This section contains important information about the page.
+    It does not display directly on the website.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HexMilkTea’s Café — cozy horror gaming community hub.">
+  <meta name="author" content="Savannah McDowell">
+  <title>HexMilkTea’s Café | Home</title>
+
+  <!-- This links the external CSS file that controls the styling -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- 
+    The wrapper keeps all content centered 
+    and prevents it from stretching too wide.
+  -->
+  <div class="wrapper">
+
+    <!-- 
+      Banner image at the top of the page.
+     -->
+    <div class="banner">
+      <img src="images/hexmlktea-banner.jpg" alt="HexMilkTea banner">
+    </div>
+
+    <!-- 
+      Header section that contains the logo and website title.
+      Flexbox in CSS aligns these side by side.
+    -->
+    <header class="header-bar">
+      <img class="brand-logo" src="images/hexmlktea-logo.png" alt="HexMilkTea logo">
+
+      <div>
+        <h1 class="site-title">HexMilkTea’s Café</h1>
+        <p class="tagline">Cozy horror vibes • Late-night gaming • Community first</p>
+      </div>
+    </header>
+
+    <!-- 
+      Navigation menu.
+      The "current" class highlights the page the user is on.
+    -->
+   <nav>
+      <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="about.html">About the Café</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 
+      Main content of the page.
+      This uses a two-column layout created with Flexbox.
+    -->
+    <main class="two-col">
+
+      <!-- Main content column -->
+      <section class="card main-col">
+        <h2>Welcome to the Café After Dark 🖤</h2>
+
+        <p>
+          This is the home base for <strong>HexMilkTea</strong> — a cozy horror gaming space where we vibe,
+          laugh, and occasionally make questionable solo-queue decisions.
+        </p>
+
+        <!-- Ordered list -->
+    <ul>
+        <li>DBD survivor vibes</li>
+        <li>Randoms & chaos</li>
+        <li>Cozy horror aesthetic</li>
+    </ul>
+
+       
+        <img src="images/Main.png" alt="Main image">
+      </section>
+
+   <!-- Sidebar column -->
+<section class="card side-col">
+  <h2>Current vibe</h2>
+
+  <p>
+    Soft gremlin hours. Chill games. Laughs. Zero sweat.
+  </p>
+
+  <img src="images/Discord.png" alt="Discord Community">
+</section>
+
+    </main>
+
+    <!-- Footer section at the bottom of the page -->
+    <footer>
+      <p>© 2026 HexMilkTea’s Café</p>
+    </footer>
+
+  </div>
+</body>
+</html>

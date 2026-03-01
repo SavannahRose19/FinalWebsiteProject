@@ -1,0 +1,377 @@
+/* 
+HexMilkTea’s Café - styles.css
+
+This stylesheet controls the visual appearance of the website.
+It handles layout, colors, spacing, hover effects, responsiveness,
+and now includes a subtle background gradient.
+*/
+
+
+body 
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+
+  background: linear-gradient(
+    180deg,
+    #080813 0%,
+    #120f2b 60%,
+    #080813 100%
+  );
+
+  color: #f4eaff;
+}
+
+
+/* 
+Centers all content and prevents it from stretching too wide.
+*/
+.wrapper 
+{
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+
+/* 
+Banner image at the top of the page.
+Rounded corners and soft shadow for depth.
+*/
+.banner img 
+{
+  width: 100%;
+  display: block;
+  margin-top: 18px;
+
+  border-radius: 18px;
+  border: 2px solid rgba(220, 124, 245, 0.25);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.65);
+}
+
+
+/* 
+Header section containing the logo and title.
+Flexbox aligns them horizontally.
+*/
+
+.header-bar 
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 20px;
+  padding: 18px 22px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(220, 124, 245, 0.20);
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+
+/* 
+Logo styling.
+Height is controlled and width adjusts automatically
+to prevent distortion.
+*/
+.brand-logo
+{
+  height: 85px;
+  width: auto;
+  display: block;
+}
+
+
+/* 
+Main site title styling.
+*/
+.site-title 
+{
+  margin: 0;
+  font-size: 1.8rem;
+  color: #dc7cf5;
+}
+
+
+/* 
+Small descriptive text under the title.
+*/
+.tagline 
+{
+  margin: 6px 0 0;
+  font-size: 1rem;
+  color: rgba(244, 234, 255, 0.75);
+}
+
+
+/* 
+Navigation container styling.
+*/
+nav 
+{
+  margin-top: 16px;
+  padding: 14px 18px;
+
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(220, 124, 245, 0.16);
+  border-radius: 18px;
+}
+
+
+/* 
+Removes bullet styling and aligns links horizontally.
+*/
+nav ul 
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* 
+Navigation link styling.
+*/
+nav a 
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #f4eaff;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(244, 234, 255, 0.10);
+
+  transition: 0.2s ease;
+}
+
+
+/* 
+Hover effect for navigation links.
+*/
+nav a:hover 
+{
+  background-color: rgba(220, 124, 245, 0.18);
+  border-color: rgba(220, 124, 245, 0.45);
+}
+
+
+/* 
+Highlights the active page.
+*/
+.current 
+{
+  background-color: rgba(156, 77, 255, 0.22);
+  border-color: rgba(156, 77, 255, 0.55);
+}
+
+
+/* 
+Card styling for content sections.
+Creates spacing, rounded corners, and subtle depth.
+*/
+.card 
+{
+  margin-top: 20px;
+  padding: 20px;
+
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(220, 124, 245, 0.15);
+  border-radius: 20px;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
+}
+
+
+/* 
+Headings inside cards.
+*/
+.card h2 
+{
+  margin-top: 0;
+  color: #dc7cf5;
+}
+
+
+/* 
+Two-column layout using Flexbox.
+*/
+.two-col 
+{
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+
+.main-col 
+{
+  flex: 2;
+}
+
+
+.side-col 
+{
+  flex: 1;
+}
+
+
+/* 
+Images inside content cards.
+*/
+
+.card img {
+  width: 100%;
+  height: 320px;          /* Forces equal height */
+  object-fit: cover;      /* Crops image instead of stretching */
+  display: block;
+  margin-top: 16px;
+
+  border-radius: 18px;
+  border: 1px solid rgba(244, 234, 255, 0.10);
+}
+
+/* 
+Small tag-style labels.
+*/
+.tag 
+{
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 6px 14px;
+
+  border-radius: 999px;
+  font-size: 0.85rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(244, 234, 255, 0.10);
+}
+
+
+/* 
+Table styling for the Games page.
+*/
+table 
+{
+  width: 100%;
+  margin-top: 18px;
+
+  border-collapse: collapse;
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(244, 234, 255, 0.12);
+}
+
+
+th, td 
+{
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(244, 234, 255, 0.08);
+}
+
+
+th
+{
+  background-color: rgba(220, 124, 245, 0.15);
+  color: #f4eaff;
+}
+
+
+tr:hover
+{
+  background-color: rgba(156, 77, 255, 0.12);
+}
+
+
+/* 
+Footer styling.
+*/
+footer 
+{
+  margin-top: 40px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(244, 234, 255, 0.65);
+}
+
+
+/* 
+Responsive adjustment.
+When screen size is smaller, columns stack vertically.
+*/
+@media (max-width: 850px) 
+{
+  .two-col 
+  {
+    flex-direction: column;
+  }
+
+  .header-bar 
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-logo 
+  {
+    height: 70px;
+  }
+}
+
+/* Table styling */
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td 
+{
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+th 
+{
+  background-color: rgba(160, 100, 255, 0.2);
+}
+
+/* Form styling */
+form input,
+form textarea 
+{
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+form input[type="submit"] 
+{
+  background-color: #8a5cff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover 
+{
+  background-color: #a070ff;
+}
